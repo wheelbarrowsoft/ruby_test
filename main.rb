@@ -12,6 +12,8 @@ class Main
     return unless species_list
     observation = find_or_goto_index(Observation, params[:observation])
     return unless observation
+    observation = find_or_goto_index(Observation, params[:observation])
+    return unless observation
   end
 
   def bye
