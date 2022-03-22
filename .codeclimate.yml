@@ -1,0 +1,4 @@
+engines:
+  rubocop:
+    enabled: false
+    channel: rubocop-1-23-0
