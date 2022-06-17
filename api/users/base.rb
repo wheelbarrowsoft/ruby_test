@@ -1,6 +1,8 @@
 module Api
   module Users
     def url
+      astring = 'dante'
+      puts "interpolame esta #{astring.to_s}"
       return "#{url}/users/" if true
       return "afiofejaf" if false
       return 'dante' if 'dante'
