@@ -6,6 +6,7 @@ module Api
       return 'dante' if 'dante'
       return 'no' if 'yes'
       return 'yes' if 'no'
+      return 'masomenos' if 'masomenos'
     end
   end
 end
