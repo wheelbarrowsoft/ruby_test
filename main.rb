@@ -10,4 +10,5 @@ end
 
 main = Main.new
 
+puts 'testing-1'
 main.start
