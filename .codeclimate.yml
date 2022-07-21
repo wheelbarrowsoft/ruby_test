@@ -1,0 +1,7 @@
+prepare:
+  fetch:
+    - url: jjfjjjjjjjjjj
+engines:
+  rubocop:
+    enabled: true
+    channel: rubocop-1-22-3
