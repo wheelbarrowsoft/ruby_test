@@ -14,3 +14,4 @@ main = Main.new
 
 main.startputs 'added by me'
 puts 'added by me'
+puts 'added by me'
