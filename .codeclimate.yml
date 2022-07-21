@@ -3,6 +3,13 @@ prepare:
     - url: google.com.com.com.ar/http::/%sjdf
       path: no
 engines:
+  structure:
+    enabled: false
+  duplication:
+    enabled: false
   rubocop:
     enabled: true
     channel: rubocop-1-23-0
+  eslint:
+    enabled: true
+    channel: eslint-8
