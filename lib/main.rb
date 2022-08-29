@@ -3,6 +3,8 @@ class Main
     @name = name
   end
 
+  attr_accessor :name
+
   def greet
     return 'hola dante' if name == 'dante'
     return 'hola carlos' if name == 'carlos'

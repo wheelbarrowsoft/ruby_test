@@ -1,0 +1,26 @@
+version: 2
+
+jobs:
+  test:
+    docker:
+      - image: circleci/ruby
+    steps:
+      - checkout
+      - run: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > cc-test-reporter
+      - run: chmod +x ./cc-test-reporter
+      - run: bundle install --jobs 4
+      - run:
+          environment:
+            CC_TEST_REPORTER_ID: 2577914a893e1b121a6fe04c3f8bb88e367c5ff799b448ebf6b758f6741bfee6
+          command: ./cc-test-reporter before-build
+      - run: bundle exec rspec --color --require spec_helper spec --format progress
+      - run:
+          environment:
+            CC_TEST_REPORTER_ID: 2577914a893e1b121a6fe04c3f8bb88e367c5ff799b448ebf6b758f6741bfee6
+          command: ./cc-test-reporter after-build || echo "skip upload"
+
+workflows:
+  version: 2
+  build_test:
+    jobs:
+      - test
