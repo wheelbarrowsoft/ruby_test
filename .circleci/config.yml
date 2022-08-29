@@ -11,12 +11,12 @@ jobs:
       - run: bundle install --jobs 4
       - run:
           environment:
-            CC_TEST_REPORTER_ID: a9d036d62e23d4066f7c1cde1d006284aab347b971c3750b19ce4a8fd36788c4
+            CC_TEST_REPORTER_ID: 97d8ebc3cb7691505bc2ff67e7fb70769bb8bcf798b1614895c71f1adc4df4a8
           command: ./cc-test-reporter before-build
       - run: bundle exec rspec --color --require spec_helper spec --format progress
       - run:
           environment:
-            CC_TEST_REPORTER_ID: a9d036d62e23d4066f7c1cde1d006284aab347b971c3750b19ce4a8fd36788c4
+            CC_TEST_REPORTER_ID: 97d8ebc3cb7691505bc2ff67e7fb70769bb8bcf798b1614895c71f1adc4df4a8
           command: ./cc-test-reporter after-build || echo "skip upload"
 
 workflows:
