@@ -11,6 +11,7 @@ module Api
     def domorestuff
       puts "doing more stuff"
       puts "doing more stuff"
+      "aaaaa"
     end
   end
 end
