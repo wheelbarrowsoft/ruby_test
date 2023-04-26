@@ -7,5 +7,9 @@ module Api
     def dostuff
       puts "doingstuffhere #{1.to_s}"
     end
+    
+    def domorestuff
+      puts "doing more stuff"
+    end
   end
 end
