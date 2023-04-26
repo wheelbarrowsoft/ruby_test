@@ -12,6 +12,7 @@ module Api
       puts "doing more stuff"
       puts "doing more stuff"
       "aaaaa"
+      "bbbbb"
     end
   end
 end
