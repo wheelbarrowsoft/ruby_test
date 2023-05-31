@@ -7,5 +7,9 @@ module Api
       return 'no' if 'yes'
       return 'yes' if 'no'
     end
+    
+    def no
+      puts "no"
+    end
   end
 end
