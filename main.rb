@@ -18,7 +18,6 @@ puts 'added by me'
 puts 'added by me'
 puts 'added by me'
 puts 'added by me'
-puts 'added by me'
 
 class Example
   def perform(id)
