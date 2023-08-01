@@ -16,5 +16,9 @@ module Api
       "ccccc"
       'ddddd'
     end
+
+    def break_these_cuffs
+      puts "i can break these cuffs"
+    end
   end
 end
