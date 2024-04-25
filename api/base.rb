@@ -22,6 +22,11 @@ module Api
       puts "AAAAAAAAAAAAAAAAAAAAAAA"
       puts "AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHH"
       puts "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      return true
+      return false
+      return true
+      return false
+      return true
     end
   end
 end
