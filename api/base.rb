@@ -17,7 +17,7 @@ module Api
       'ddddd'
     end
 
-    def break_these_cuffs
+    def break_these_cuffs(a,b,c,d,e,f)
       puts "i can break these cuffs"
       puts "AAAAAAAAAAAAAAAAAAAAAAA"
       puts "AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHH"
